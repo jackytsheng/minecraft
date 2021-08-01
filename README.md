@@ -12,15 +12,29 @@ I made a [video](https://www.youtube.com/watch?v=K6tnVemsDQA&t=5s) in chinese
 - [Amulet](https://www.amuletmc.com/installing-from-source)\
 
 ```python
-	python -m amulet_map_editor
+python -m amulet_map_editor
 ```
 
 Link to my answer on [issue](https://github.com/Amulet-Team/Amulet-Map-Editor/issues/290#issuecomment-890292869) about ghost portal using amulet
 
 - [Universal Minecraft Editor](https://www.universalminecrafteditor.com/5glXX1pcDtTpIhlScl37.html)
 
-## How to Script upon setting up ubuntu instance
+## Setting up ubuntu instance
 
-after `sudo -s`
+```bash
+sudo -s
 
-1. run `setup.sh`
+sudo apt-get update
+
+apt install git
+
+./script setup.sh
+```
+
+## Copy world
+
+`./scripts/copy.sh`
+
+## Run game
+
+`./scripts/start.sh`
