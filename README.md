@@ -50,5 +50,13 @@ apt install git
 3. Configure /.oci/config
    https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
 
-4. Upload to OCi
+4. Create Object Storage and make it public
+
+5. Upload to OCI
    https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/managingobjects.htm
+
+## Backup
+
+`apt install zip`
+
+`oci os object put --namespace axglc9ft2935 --bucket-name mincraft-backup --file ./backupFromServer.zip --no-multipart`
