@@ -38,3 +38,17 @@ apt install git
 ## Run game
 
 `./scripts/start.sh`
+
+## Configure Instance to use Oracle Cloud Object Storage
+
+1. Install Oracle-Cli
+   https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#InstallingCLI__PromptsInstall
+
+2. Generate apikey
+   https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#Required_Keys_and_OCIDs
+
+3. Configure /.oci/config
+   https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+
+4. Upload to OCi
+   https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/managingobjects.htm
