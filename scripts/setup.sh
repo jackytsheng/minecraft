@@ -1,4 +1,3 @@
-
 mkdir minecraft-server
 
 # Update Instance
@@ -13,12 +12,9 @@ apt install vim
 # Install unzip 
 apt install unzip
 
-# install server
-cd minecraft-server
+# Install zip
+apt install zip
 
-curl https://minecraft.azureedge.net/bin-linux/bedrock-server-1.17.10.04.zip --output mc.zip
+# Install Oracle-CLI
+bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 
-unzip mc.zip
-
-# Delete the zip file once install
-rm mc.zip

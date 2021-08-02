@@ -41,18 +41,17 @@ apt install git
 
 ## Configure Instance to use Oracle Cloud Object Storage
 
-1. Install Oracle-Cli
-   https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#InstallingCLI__PromptsInstall
-
-2. Generate apikey
+1. Generate apikey
    https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#Required_Keys_and_OCIDs
 
-3. Configure /.oci/config
+2. Configure /.oci/config
+   https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.4/odikm/oracle-object-storage.html#GUID-6125C5CD-9FBE-4CCB-842A-35C68B5B7626
+
    https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
 
-4. Create Object Storage and make it public
+3. Create Object Storage and make it public
 
-5. Upload to OCI
+4. Upload to OCI
    https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/managingobjects.htm
 
 ## Backup
