@@ -1,5 +1,5 @@
 
-mkdir mincraft-server
+mkdir minecraft-server
 
 # Update Instance
 sudo apt-get update
