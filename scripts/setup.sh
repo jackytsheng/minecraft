@@ -18,3 +18,5 @@ apt install zip
 # Install Oracle-CLI
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 
+# copy start script inside minecraft-server
+cp ./start.sh ../minecraft-server
