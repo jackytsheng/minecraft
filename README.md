@@ -1,7 +1,9 @@
-# minecraft-backup
+# Minecraft
 
-This is a repo for all my minecraft stuff.
+This is a repo for all my Minecraft stuff.
 also include set up for cloud Instance to download my world when hosting
+
+# Oracle Cloud Related
 
 ## How to create instance on Oracle Cloud
 
@@ -59,3 +61,39 @@ apt install git
 `apt install zip`
 
 `oci os object put --namespace axglc9ft2935 --bucket-name mincraft-backup --file ./backupFromServer.zip --no-multipart`
+
+# AWS EC2 related
+
+After setting up a linus Image
+
+Upgrade everything
+
+```
+apt-get update
+apt install vim
+apt install zip
+apt install awscli
+
+
+```
+
+download the latest server
+
+```
+curl https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.40.02.zip --output mc.zip
+```
+
+after unzipping it then run the server in detach mode under `screen`
+
+```
+LD_LIBRARY_PATH=. screen -dmS bds ./bedrock_server
+```
+
+could use s3 to upload and download backup, make sure IAM user is created to perform this action
+
+then use this to cp from s3 to ec2 or from ec2 to s3
+
+```
+aws s3 cp s3://jacky-minecraft-backup/<source> <dest>
+
+```
